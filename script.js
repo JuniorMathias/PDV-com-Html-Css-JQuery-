@@ -30,20 +30,12 @@ $(document).ready(function () {
     });
  });
 
- function enviar()
-{
-    const tarefa = document.querySelector("#tarefa").value;
-  localStorage.setItem("arquivo1", tarefa);
-  console.log(tarefa);
+//função para enviar valores para o localStorage
+ function enviar(){
+    const nome = document.querySelector("#nome").value;
+  localStorage.setItem("arquivo1", nome);
 }
 
-function showLocalStorageData() {
-    
-  }
 
-function comprar(){
-    var valor = (localStorage.getItem("arquivo1"));
-    document.getElementById('cliente').innerHTML = valor;
-}
 
 
