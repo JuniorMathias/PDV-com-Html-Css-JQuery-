@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!-- Todas as suas configurações de head -->
   <script defer src="laptop.js"></script>
   <script type="text/javascript" src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-  <!-- O seu código HTML -->
   <h1>CPU</h1>
     <select id="select01">
         <option value="0">Selecione uma CPU</option>
-        <option value="500" selected>Core i5 - 500$</option>
+        <option value="500">Core i5 - 500$</option>
         <option value="350">Core i3 - 350$</option>
         <option value="300">Dell OptiPlex - 300$ </option>
         <option value="450">Core i7 - 450$</option>
@@ -45,9 +44,19 @@
     
     <h1>Valor Total de sua Compra</h1>
     <input type="text" id="Resultado">
+
+
+
+	
     
     <p>Cliente: <b id='cliente'></b> </p>
-    <p>valor: <b id='client'></b> </p>
+    <p>CPU: <b id='cpu'></b> </p>
+    <p>Memória: <b id='memoria'></b> </p>
+    <p>HD: <b id='hd'></b> </p>
+    <p>Sistema Operacional: <b id='so'></b> </p>
+
+
+    <p>Total: <b id='valor'></b> </p>
 
 </body>
 </html>
