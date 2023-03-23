@@ -5,6 +5,24 @@
 
 </head>
 <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<form method="post" action="#">
+   <div class="field half first">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome">
+   </div>
+   <div class="field half">
+        <label for="sobrenome">Sobrenome</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+   </div></form>
+<button id="teste">Teste</button>
+
+<script type="text/javascript">
+    $("#teste").click(function() {
+    var nome = $("#nome").val();
+    alert(nome); 
+    });
+ </script>
 
 
 </body>

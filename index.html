@@ -11,18 +11,25 @@
 </head>
 <body>
 	<h1>Login</h1>
-	<form action="escolha.html"  method="post" name="formulario" id="formulario">
+	<form action="laptop.html"  method="post" name="formulario">
 
         <label for="nome">Nome:</label> 
-		<input type="text" id="nome" name="nome" required><br>
+		<input type="text" id="nome" name="nome" required class="source"><br>
 
 		<label for="email">E-mail:</label>
 		<input type="email" id="email" name="email" required><br>
 		
 		<label for="senha">Senha:</label>
 		<input type="password" id="senha" name="senha" required><br>
+
+        <input
+      type="text"
+      name="tarefa"
+      placeholder="Insira sua tarefa"
+      id="tarefa"
+    />
 		
-		<input type="submit" value="Logar" onClick="AssignValues()">
+		<input type="submit" value="Logar" onclick="enviar()">
                 
 	</form>
 	</body>

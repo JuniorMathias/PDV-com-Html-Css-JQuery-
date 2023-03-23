@@ -1,6 +1,3 @@
-function arroz(){
-    alert("Arroz");
-}
 
 $(document).ready(function () {
     let errorNome = $("<div class='msg' style='color:red; font-size:12px;'>").text('Nome obrigatório! ');
@@ -32,4 +29,21 @@ $(document).ready(function () {
        }
     });
  });
+
+ function enviar()
+{
+    const tarefa = document.querySelector("#tarefa").value;
+  localStorage.setItem("arquivo1", tarefa);
+  console.log(tarefa);
+}
+
+function showLocalStorageData() {
+    
+  }
+
+function comprar(){
+    var valor = (localStorage.getItem("arquivo1"));
+    document.getElementById('cliente').innerHTML = valor;
+}
+
 

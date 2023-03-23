@@ -16,3 +16,4 @@ select1.onchange = ChangeInput
 select2.onchange = ChangeInput
 select3.onchange = ChangeInput
 select4.onchange = ChangeInput
+
