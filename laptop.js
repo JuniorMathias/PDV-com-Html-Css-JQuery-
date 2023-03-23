@@ -41,13 +41,9 @@ function comprar(){
     
 }
 
-$( "#center" ).submit(function( event ) {
-    $('.container').css('display', 'none');
-    $('#other').css('display', 'inline');
-    event.preventDefault();
-  });
-  
-  $( "#other" ).click(function() {
-    $( "#center" ).submit();
-  });
 
+$("#comprar").click(function(e){
+   e.preventDefault(); // evita que o formulário seja submetido
+   $("#center").toggle();
+   $('#customers').css('display', 'inline');
+});

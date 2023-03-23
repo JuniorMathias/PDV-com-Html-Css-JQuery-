@@ -4,13 +4,13 @@
   <script defer src="laptop.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.js"></script>
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/additional-methods.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="laptop.css" media="screen" />
 </head>
 <body>
-    <div id="center"">
+    <div id="center">
         <div id="containerTotal"> 
                 <div class="container">
                     <header>
@@ -86,8 +86,8 @@
         </div>
         <button type="submit" id="comprar" onclick="comprar()">Comprar</button></br>
     </div>
-
-<table id="customers">
+<div id="tabela">
+<table id="customers" style="display: none;">
     <tr>
         <th>Detalhes</th>
         <th>Valores</th>
@@ -114,7 +114,8 @@
     </tr>
 </table>
 <h1>Valor Total de sua Compra</h1>
-<input type="text" id="Resultado">
+<input type="text" id="Resultado" readonly>
+</div>
 
 </body>
 </html>
