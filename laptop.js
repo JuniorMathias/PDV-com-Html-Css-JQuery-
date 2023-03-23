@@ -38,4 +38,16 @@ function comprar(){
 
 
     document.getElementById('valor').innerHTML = input.value;
+    
 }
+
+$( "#center" ).submit(function( event ) {
+    $('.container').css('display', 'none');
+    $('#other').css('display', 'inline');
+    event.preventDefault();
+  });
+  
+  $( "#other" ).click(function() {
+    $( "#center" ).submit();
+  });
+

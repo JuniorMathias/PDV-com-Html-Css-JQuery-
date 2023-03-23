@@ -4,124 +4,117 @@
   <script defer src="laptop.js"></script>
   <script type="text/javascript" src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/jquery.validate.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.13.1/additional-methods.js"></script>
+
   <link rel="stylesheet" type="text/css" href="laptop.css" media="screen" />
 </head>
 <body>
-    <div id="center">
-   <div id="containerTotal"> 
-        <div id="container">
-            <header>
-            <h1>CPU</h1>
-            </header>
-            <section>
-                <nav>
-                    <h1>Escolha sua CPU</h1>
-                    <select id="select01">
-                        <option value="0"></option>
-                        <option value="500">Core i5 - 500$</option>
-                        <option value="350">Core i3 - 350$</option>
-                        <option value="300">Dell OptiPlex - 300$ </option>
-                        <option value="450">Core i7 - 450$</option>
-                    </select></br>
-                </nav>
-                <article>
-                    <h1>London</h1>
-                    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </article>
-            </section>
+    <div id="center"">
+        <div id="containerTotal"> 
+                <div class="container">
+                    <header>
+                    <h1>CPU</h1>
+                    </header>
+                    <section>
+                        <nav>
+                            <h1>Escolha sua CPU</h1>
+                            <select id="select01">
+                                <option value="0"></option>
+                                <option value="500">Core i5 - 500$</option>
+                                <option value="350">Core i3 - 350$</option>
+                                <option value="300">Dell OptiPlex - 300$ </option>
+                                <option value="450">Core i7 - 450$</option>
+                            </select></br>
+                        </nav>
+                    </section>
+                </div>
+
+                <div class="container">
+                    <header>
+                        <h1>Memória</h1>
+                        </header>
+                        <section>
+                            <nav>
+                            <h1>Escolha sua Memória</h1>
+                                <select id="select02">
+                                    <option value="0" ></option>
+                                    <option value="200">4GB - 200$</option>
+                                    <option value="150">8GB - 150$</option>
+                                    <option value="120">16GB - 120$</option>
+                                    <option value="100">32GB - 100$</option>
+                                </select></br>
+                            </nav>
+                        </section>
+                </div>  
         </div>
 
-        <div id="container">
-            <header>
-                <h1>Memória</h1>
+        <div id="containerTotal"> 
+            <div class="container">
+                <header>
+                    <h1>HD</h1>
                 </header>
                 <section>
                     <nav>
-                    <h1>Escolha sua Memórias</h1>
-                        <select id="select02">
-                            <option value="0" ></option>
-                            <option value="200">4GB - 200$</option>
-                            <option value="150">8GB - 150$</option>
-                            <option value="120">16GB - 120$</option>
-                            <option value="100">32GB - 100$</option>
+                        <h1>Escolha seu HD</h1>
+                        <select id="select03">
+                            <option value="0"></option>
+                            <option value="400">Seagate - 400$</option>
+                            <option value="350">ADATA - 350$</option>
+                            <option value="300">Western Digital - 300$</option>
+                            <option value="200">Union Sine - 200$</option>
                         </select></br>
                     </nav>
-                    <article>
-                        <h1>London</h1>
-                        
-                        <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                    </article>
                 </section>
-        </div>  
-   </div>
-   <div id="containerTotal"> 
-        <div id="container">
-            <header>
-                <h1>HD</h1>
-            </header>
-            <section>
-                <nav>
-                    <h1>Escolha seu HD</h1>
-                    <select id="select03">
-                        <option value="0"></option>
-                        <option value="400">Seagate - 400$</option>
-                        <option value="350">ADATA - 350$</option>
-                        <option value="300">Western Digital - 300$</option>
-                        <option value="200">Union Sine - 200$</option>
-                    </select></br>
-                </nav>
-                
-                <article>
-                <h1>London</h1>
-                
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </article>
-            </section>
+            </div>
+            <div class="container">
+                <header>
+                    <h1 style="font-size: 1.3em;">Sistema Operacional</h1>
+                </header>
+                <section>
+                    <nav>
+                        <h1>Escolha seu S.O</h1>
+                        <select id="select04">
+                            <option value="0"></option>
+                            <option value="310">Mac IOS - 310$</option>
+                            <option value="200">LINUX - 200$</option>
+                        </select></br>
+                    </nav>
+                </section>
+            </div>
+            
         </div>
-        <div id="container">
-            <header>
-                <h1 style="font-size: 1.3em;">Sistema Operacional</h1>
-            </header>
-            <section>
-                <nav>
-                    <h1>Escolha seu S.O</h1>
-                    <select id="select04">
-                        <option value="0"></option>
-                        <option value="310">Mac IOS - 310$</option>
-                        <option value="200">LINUX - 200$</option>
-                    </select></br>
-                </nav>
-                
-                <article>
-                <h1>London</h1>
-                
-                <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
-                </article>
-            </section>
-        </div>
-     
+        <button type="submit" id="comprar" onclick="comprar()">Comprar</button></br>
     </div>
-</div>
 
-
-<button type="submit" id="comprar" onclick="comprar()">Comprar</button></br>
-    
+<table id="customers">
+    <tr>
+        <th>Detalhes</th>
+        <th>Valores</th>
+    </tr>
+    <tr>
+        <td>Cliente:</td>
+        <td><b id='cliente'></b></td>
+    </tr>
+    <tr>
+        <td>CPU: </td>
+        <td><b id='cpu'></b> </td>
+    </tr>
+    <tr>
+        <td>Memória:</td>
+        <td><b id='memoria'></b> </td>
+    </tr>
+    <tr>
+        <td>HD: </td>
+        <td><b id='hd'></b></td>
+    </tr>
+    <tr>
+        <td>Sistema Operacional: </td>
+        <td><b id='so'></b></td>
+    </tr>
+</table>
 <h1>Valor Total de sua Compra</h1>
 <input type="text" id="Resultado">
-
-
-
-
-
-<p>Cliente: <b id='cliente'></b> </p>
-<p>CPU: <b id='cpu'></b> </p>
-<p>Memória: <b id='memoria'></b> </p>
-<p>HD: <b id='hd'></b> </p>
-<p>Sistema Operacional: <b id='so'></b> </p>
-
-
-<p>Total: <b id='valor'></b> </p>
-
 
 </body>
 </html>
