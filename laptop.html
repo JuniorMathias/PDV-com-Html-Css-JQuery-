@@ -26,6 +26,10 @@
                                 <option value="300">Dell OptiPlex - 300$ </option>
                                 <option value="450">Core i7 - 450$</option>
                             </select></br>
+                            <div id="valores">
+                                Valor: <div id="valorCPU"></div>
+                            </div> 
+                            
                         </nav>
                     </section>
                 </div>
@@ -36,14 +40,17 @@
                         </header>
                         <section>
                             <nav>
-                            <h1>Escolha sua Memória</h1>
+                            <h1 style="font-size: 1.6em;">Escolha sua Memória</h1>
                                 <select id="select02">
                                     <option value="0" ></option>
                                     <option value="200">4GB - 200$</option>
                                     <option value="150">8GB - 150$</option>
                                     <option value="120">16GB - 120$</option>
                                     <option value="100">32GB - 100$</option>
-                                </select></br>
+                                </select>
+                                <div id="valores">
+                                    Valor: <div id="valorMemoria"></div>
+                                </div> 
                             </nav>
                         </section>
                 </div>  
@@ -63,13 +70,16 @@
                             <option value="350">ADATA - 350$</option>
                             <option value="300">Western Digital - 300$</option>
                             <option value="200">Union Sine - 200$</option>
-                        </select></br>
+                        </select>
+                        <div id="valores">
+                            Valor: <div id="valorHD"></div>
+                        </div>
                     </nav>
                 </section>
             </div>
             <div class="container">
                 <header>
-                    <h1 style="font-size: 1.3em;">Sistema Operacional</h1>
+                    <h1 style="font-size: 1.3em; padding: 25px;">Sistema Operacional</h1>
                 </header>
                 <section>
                     <nav>
@@ -78,7 +88,10 @@
                             <option value="0"></option>
                             <option value="310">Mac IOS - 310$</option>
                             <option value="200">LINUX - 200$</option>
-                        </select></br>
+                        </select>
+                        <div id="valores">
+                            Valor: <div id="valorSO"></div>
+                        </div>
                     </nav>
                 </section>
             </div>
@@ -90,6 +103,7 @@
 <table id="customers" style="display: none;">
     <tr>
         <th>Detalhes</th>
+        <th>Itens</th>
         <th>Valores</th>
     </tr>
     <tr>
@@ -99,6 +113,7 @@
     <tr>
         <td>CPU: </td>
         <td><b id='cpu'></b> </td>
+        <td><b id='SOS'></b></td>
     </tr>
     <tr>
         <td>Memória:</td>

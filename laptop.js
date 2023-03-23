@@ -25,6 +25,7 @@ select4.onchange = ChangeInput
 function comprar(){
     //pegando o texto dos options
 	let cpu = select1.options[select1.selectedIndex].text;
+    let test = select1.options[select1.selectedIndex].value;
     let memoria =  select2.options[select2.selectedIndex].text;
     let hd = select3.options[select3.selectedIndex].text;
     let so = select4.options[select4.selectedIndex].text;
@@ -36,6 +37,8 @@ function comprar(){
     document.getElementById('hd').innerHTML = hd;
     document.getElementById('so').innerHTML = so;
 
+    document.getElementById('SOS').innerHTML = test;
+
 
     document.getElementById('valor').innerHTML = input.value;
     
@@ -46,4 +49,30 @@ $("#comprar").click(function(e){
    e.preventDefault(); // evita que o formulário seja submetido
    $("#center").toggle();
    $('#customers').css('display', 'inline');
+   $('#valorSO').css('display', 'inline');
+});
+
+//mostrar valores dinamicamente quando selecionar o item
+
+$('#select01').change(function(){
+	var valor = $('#select01').val();
+  $('#valorCPU').css('display','block')
+	$('#valorCPU').html(valor);
+});
+
+$('#select02').change(function(){
+  $('#valorMemoria').css('display','block')
+	$('#valorMemoria').html(valor);
+});
+
+$('#select03').change(function(){
+	var valor = $('#select03').val();
+  $('#valorHD').css('display','block')
+	$('#valorHD').html(valor);
+});
+
+$('#select04').change(function(){
+	var valor = $('#select04').val();
+  $('#valorSO').css('display','block')
+	$('#valorSO').html(valor);
 });
