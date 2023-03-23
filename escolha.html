@@ -2,31 +2,23 @@
 <html>
 <head>
 <title>Escolha</title>
-<style>
-	body{
-		background-color: #cecece;
-	}
-	#imagens{
-
-		display: flex;
-		justify-content: center;
-	}
-	.myImg{
-		width: 250px;
-		height: 250px;
-	}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
 </head>
 <body>
-<div id="imagens">
-	<div id="macbook">
-		<a href="laptop.html"> <img src="/img/macbook.png" alt="macbook"  class="myImg" /> </a>
+  	<div class="container">
+		<h1>O que você está procurando?</h1>
+		<div id="escolha">
+		<div id="imagens">
+			<div id="macbook">
+				<a href="laptop.html"> <img src="/img/macbook.png" alt="macbook"  class="myImg" /> </a>
+				<div class="titulo">Laptop</div>
+			</div>
+			<div id="desktop">
+				<a href="desktop.html"><img src="/img/desktop.png" alt="desktop"  class="myImg" /></a>
+				<div class="titulo">Desktop</div>
+			</div>
+		</div>
 	</div>
-	<div id="desktop">
-		<a href="desktop.html"><img src="/img/desktop.png" alt="desktop"  class="myImg" /></a>
-	</div>
-
 </div>
-
 </body>
 </html>
