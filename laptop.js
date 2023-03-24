@@ -77,27 +77,39 @@ $('#select04').change(function(){
 });
 
 // função para alterar imagem de acordo com o que é pedido
+
+
 $(document).ready(function() {
   $('.cpu').hide();
   $('#sumir').show();
+
+  $('.memo').hide();
+  $('#sumirMemo').show();
+
+  $('.hds').hide();
+  $('#sumirHd').show();
+
+  $('.so').hide();
+  $('#sumirSo').show();
+
   $('#select01').change(function() {
     $('.cpu').hide();
     $('#' + $(this).val()).show();
   })
-});
-$(document).ready(function() {
-  $('.memo').hide();
-  $('#sumir').show();
+
   $('#select02').change(function() {
     $('.memo').hide();
     $('#' + $(this).val()).show();
   })
-});
-$(document).ready(function() {
-  $('.hds').hide();
-  $('#sumir').show();
+
   $('#select03').change(function() {
     $('.hds').hide();
     $('#' + $(this).val()).show();
   })
+
+  $('#select04').change(function() {
+    $('.so').hide();
+    $('#' + $(this).val()).show();
+  })
 });
+
