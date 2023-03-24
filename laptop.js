@@ -28,7 +28,7 @@ function comprar(){
     
     let cliente = (localStorage.getItem("arquivo1"));
     document.getElementById('cliente').innerHTML = cliente.toUpperCase();
-    document.getElementById('cpu').innerHTML = select1.options[select1.selectedIndex].text;;
+    document.getElementById('cpu').innerHTML = select1.options[select1.selectedIndex].text;
     document.getElementById('memoria').innerHTML = select2.options[select2.selectedIndex].text;
     document.getElementById('hd').innerHTML = select3.options[select3.selectedIndex].text;
     document.getElementById('so').innerHTML = select4.options[select4.selectedIndex].text;
@@ -76,16 +76,28 @@ $('#select04').change(function(){
 	$('#valorSO').html(valor);
 });
 
-$(document).ready(function(){
-  $("select").change(function(){
-      $(this).find("option:selected").each(function(){
-          var optionValue = $(this).attr("value");
-          if(optionValue){
-              $(".box").not("." + optionValue).hide();
-              $("." + optionValue).show();
-          } else{
-              $(".box").hide();
-          }
-      });
-  }).change();
+// função para alterar imagem de acordo com o que é pedido
+$(document).ready(function() {
+  $('.cpu').hide();
+  $('#sumir').show();
+  $('#select01').change(function() {
+    $('.cpu').hide();
+    $('#' + $(this).val()).show();
+  })
+});
+$(document).ready(function() {
+  $('.memo').hide();
+  $('#sumir').show();
+  $('#select02').change(function() {
+    $('.memo').hide();
+    $('#' + $(this).val()).show();
+  })
+});
+$(document).ready(function() {
+  $('.hds').hide();
+  $('#sumir').show();
+  $('#select03').change(function() {
+    $('.hds').hide();
+    $('#' + $(this).val()).show();
+  })
 });

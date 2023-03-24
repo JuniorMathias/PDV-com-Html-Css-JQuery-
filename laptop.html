@@ -21,7 +21,7 @@
                         <nav>
                             <h1>Escolha sua CPU</h1>
                             <select id="select01">
-                                <option></option>
+                                <option value="0"></option>
                                 <option value="500">Core i9</option>
                                 <option value="450">Core i7</option>
                                 <option value="350">Core i5</option>
@@ -30,17 +30,13 @@
                             <div class="valores">
                                 Valor: <div id="valorCPU"></div>
                             </div> 
-                            <div class="500 box" data-wow-delay="0.3s">
-                                <img src="/img/i9.jpg" alt="Core i5" width="200px" height="150px">
-                            </div>
-                            <div class="450 box" data-wow-delay="0.3s">
-                                <img src="/img/i7.png" alt="Core i5" width="200px" height="100px">
-                            </div>
-                            <div class="350 box" data-wow-delay="0.3s">
-                                <img src="/img/i5.png" alt="Core i5" width="200px" height="100px">
-                            </div>
-                            <div class="300 box" data-wow-delay="0.3s">
-                                <img src="/img/i3.png" alt="Core i5" width="200px" height="100px">
+                            <div>
+                                <p id="sumir" class="cpu"></p>
+                                <p id="500" class="cpu"><img src="/img/i9.jpg" alt="Core i9" width="200px" height="150px"/></p>
+                                <p id="450" class="cpu"><img src="/img/i7.png" alt="Core i7" width="200px" height="150px"/></p>
+                                <p id="350" class="cpu"><img src="/img/i5.png" alt="Core i5" width="200px" height="150px"/></p>
+                                <p id="300" class="cpu"><img src="/img/i3.png" alt="Core i3" width="200px" height="150px"/></p>
+                                <img src="img/team/1.png" alt="">
                             </div>
                         </nav>
                     </section>
@@ -48,23 +44,31 @@
 
                 <div class="container">
                     <header>
-                        <h1>Memória</h1>
-                        </header>
-                        <section>
-                            <nav>
-                            <h1 style="font-size: 1.6em;">Escolha sua Memória</h1>
-                                <select id="select02">
-                                    <option></option>
-                                    <option value="200">4GB</option>
-                                    <option value="150">8GB</option>
-                                    <option value="120">16GB</option>
-                                    <option value="100">32GB</option>
-                                </select>
-                                <div class="valores">
-                                    Valor: <div id="valorMemoria"></div>
-                                </div> 
-                            </nav>
-                        </section>
+                    <h1>Memória</h1>
+                    </header>
+                    <section>
+                        <nav>
+                        <h1 style="font-size: 1.6em;">Escolha sua Memória</h1>
+                            <select id="select02">
+                                <option value="0"></option>
+                                <option value="200">4GB</option>
+                                <option value="150">8GB</option>
+                                <option value="120">16GB</option>
+                                <option value="100">32GB</option>
+                            </select>
+                            <div class="valores">
+                                Valor: <div id="valorMemoria"></div>
+                            </div> 
+                            <div>
+                                <p id="sumirMemo" class="memo"></p>
+                                <p id="200" class="memo"><img src="/img/i9.jpg" alt="Core i9" width="200px" height="150px"/></p>
+                                <p id="150" class="memo"><img src="/img/i7.png" alt="Core i7" width="200px" height="150px"/></p>
+                                <p id="120" class="memo"><img src="/img/i5.png" alt="Core i5" width="200px" height="150px"/></p>
+                                <p id="100" class="memo"><img src="/img/i3.png" alt="Core i3" width="200px" height="150px"/></p>
+                                <img src="img/team/1.png" alt="">
+                            </div>
+                        </nav>
+                    </section>
                 </div>  
         </div>
 
@@ -77,14 +81,22 @@
                     <nav>
                         <h1>Escolha seu HD</h1>
                         <select id="select03">
-                            <option></option>
-                            <option value="400">Seagate</option>
-                            <option value="350">ADATA</option>
-                            <option value="300">Western Digital</option>
-                            <option value="200">Union Sine</option>
+                            <option value="0"></option>
+                            <option value="650">Seagate</option>
+                            <option value="635">ADATA</option>
+                            <option value="630">Western Digital</option>
+                            <option value="510">Union Sine</option>
                         </select>
                         <div class="valores">
                             Valor: <div id="valorHD"></div>
+                        </div>
+                        <div>
+                            <p id="sumirHd" class="hds"></p>
+                            <p id="650" class="hds"><img src="/img/i9.jpg" alt="Core i9" width="200px" height="150px"/></p>
+                            <p id="635" class="hds"><img src="/img/i7.png" alt="Core i7" width="200px" height="150px"/></p>
+                            <p id="630" class="hds"><img src="/img/i5.png" alt="Core i5" width="200px" height="150px"/></p>
+                            <p id="510" class="hds"><img src="/img/desktop.png" alt="Core i3" width="200px" height="150px"/></p>
+                           
                         </div>
                     </nav>
                 </section>
