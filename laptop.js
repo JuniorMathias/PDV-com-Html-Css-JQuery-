@@ -23,33 +23,31 @@ select4.onchange = ChangeInput
 
 //mostrando valores quando finalizado a compra
 function comprar(){
-    //pegando o texto dos options
-	let cpu = select1.options[select1.selectedIndex].text;
-    let test = select1.options[select1.selectedIndex].value;
-    let memoria =  select2.options[select2.selectedIndex].text;
-    let hd = select3.options[select3.selectedIndex].text;
-    let so = select4.options[select4.selectedIndex].text;
+
+    //pegando o texto dos options e jogando na table
     
     let cliente = (localStorage.getItem("arquivo1"));
-    document.getElementById('cliente').innerHTML = cliente;
-    document.getElementById('cpu').innerHTML = cpu;
-    document.getElementById('memoria').innerHTML = memoria;
-    document.getElementById('hd').innerHTML = hd;
-    document.getElementById('so').innerHTML = so;
+    document.getElementById('cliente').innerHTML = cliente.toUpperCase();
+    document.getElementById('cpu').innerHTML = select1.options[select1.selectedIndex].text;;
+    document.getElementById('memoria').innerHTML = select2.options[select2.selectedIndex].text;
+    document.getElementById('hd').innerHTML = select3.options[select3.selectedIndex].text;
+    document.getElementById('so').innerHTML = select4.options[select4.selectedIndex].text;
 
-    document.getElementById('SOS').innerHTML = test;
+    document.getElementById('SOS').innerHTML = select1.value;
+    document.getElementById('mem').innerHTML = select2.value;
+    document.getElementById('hds').innerHTML = select3.value;
+    document.getElementById('sis').innerHTML = select4.value;
 
 
     document.getElementById('valor').innerHTML = input.value;
     
 }
 
-
+// Mostrar extrato da compra após finalizar
 $("#comprar").click(function(e){
-   e.preventDefault(); // evita que o formulário seja submetido
+   e.preventDefault(); 
    $("#center").toggle();
-   $('#customers').css('display', 'inline');
-   $('#valorSO').css('display', 'inline');
+   $('#tabela').css('display', 'block');
 });
 
 //mostrar valores dinamicamente quando selecionar o item
@@ -61,6 +59,7 @@ $('#select01').change(function(){
 });
 
 $('#select02').change(function(){
+	var valor = $('#select02').val();
   $('#valorMemoria').css('display','block')
 	$('#valorMemoria').html(valor);
 });
@@ -75,4 +74,18 @@ $('#select04').change(function(){
 	var valor = $('#select04').val();
   $('#valorSO').css('display','block')
 	$('#valorSO').html(valor);
+});
+
+$(document).ready(function(){
+  $("select").change(function(){
+      $(this).find("option:selected").each(function(){
+          var optionValue = $(this).attr("value");
+          if(optionValue){
+              $(".box").not("." + optionValue).hide();
+              $("." + optionValue).show();
+          } else{
+              $(".box").hide();
+          }
+      });
+  }).change();
 });

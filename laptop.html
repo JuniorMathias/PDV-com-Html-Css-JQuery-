@@ -5,7 +5,8 @@
   <script type="text/javascript" src="script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <link rel="stylesheet" type="text/css" href="laptop.css" media="screen" />
 </head>
@@ -20,16 +21,27 @@
                         <nav>
                             <h1>Escolha sua CPU</h1>
                             <select id="select01">
-                                <option value="0"></option>
-                                <option value="500">Core i5 - 500$</option>
-                                <option value="350">Core i3 - 350$</option>
-                                <option value="300">Dell OptiPlex - 300$ </option>
-                                <option value="450">Core i7 - 450$</option>
-                            </select></br>
-                            <div id="valores">
+                                <option></option>
+                                <option value="500">Core i9</option>
+                                <option value="450">Core i7</option>
+                                <option value="350">Core i5</option>
+                                <option value="300">Core i3</option>
+                            </select>
+                            <div class="valores">
                                 Valor: <div id="valorCPU"></div>
                             </div> 
-                            
+                            <div class="500 box" data-wow-delay="0.3s">
+                                <img src="/img/i9.jpg" alt="Core i5" width="200px" height="150px">
+                            </div>
+                            <div class="450 box" data-wow-delay="0.3s">
+                                <img src="/img/i7.png" alt="Core i5" width="200px" height="100px">
+                            </div>
+                            <div class="350 box" data-wow-delay="0.3s">
+                                <img src="/img/i5.png" alt="Core i5" width="200px" height="100px">
+                            </div>
+                            <div class="300 box" data-wow-delay="0.3s">
+                                <img src="/img/i3.png" alt="Core i5" width="200px" height="100px">
+                            </div>
                         </nav>
                     </section>
                 </div>
@@ -42,13 +54,13 @@
                             <nav>
                             <h1 style="font-size: 1.6em;">Escolha sua Memória</h1>
                                 <select id="select02">
-                                    <option value="0" ></option>
-                                    <option value="200">4GB - 200$</option>
-                                    <option value="150">8GB - 150$</option>
-                                    <option value="120">16GB - 120$</option>
-                                    <option value="100">32GB - 100$</option>
+                                    <option></option>
+                                    <option value="200">4GB</option>
+                                    <option value="150">8GB</option>
+                                    <option value="120">16GB</option>
+                                    <option value="100">32GB</option>
                                 </select>
-                                <div id="valores">
+                                <div class="valores">
                                     Valor: <div id="valorMemoria"></div>
                                 </div> 
                             </nav>
@@ -65,13 +77,13 @@
                     <nav>
                         <h1>Escolha seu HD</h1>
                         <select id="select03">
-                            <option value="0"></option>
-                            <option value="400">Seagate - 400$</option>
-                            <option value="350">ADATA - 350$</option>
-                            <option value="300">Western Digital - 300$</option>
-                            <option value="200">Union Sine - 200$</option>
+                            <option></option>
+                            <option value="400">Seagate</option>
+                            <option value="350">ADATA</option>
+                            <option value="300">Western Digital</option>
+                            <option value="200">Union Sine</option>
                         </select>
-                        <div id="valores">
+                        <div class="valores">
                             Valor: <div id="valorHD"></div>
                         </div>
                     </nav>
@@ -85,11 +97,11 @@
                     <nav>
                         <h1>Escolha seu S.O</h1>
                         <select id="select04">
-                            <option value="0"></option>
-                            <option value="310">Mac IOS - 310$</option>
-                            <option value="200">LINUX - 200$</option>
+                            <option></option>
+                            <option value="310">Mac IOS</option>
+                            <option value="200">LINUX</option>
                         </select>
-                        <div id="valores">
+                        <div class="valores">
                             Valor: <div id="valorSO"></div>
                         </div>
                     </nav>
@@ -99,16 +111,13 @@
         </div>
         <button type="submit" id="comprar" onclick="comprar()">Comprar</button></br>
     </div>
-<div id="tabela">
-<table id="customers" style="display: none;">
+<div id="tabela" style="display: none;">
+    <h2> Cliente <b id='cliente' style="color: #009b89;"></b> Comprou: </h2>
+<table id="customers" >
     <tr>
         <th>Detalhes</th>
         <th>Itens</th>
         <th>Valores</th>
-    </tr>
-    <tr>
-        <td>Cliente:</td>
-        <td><b id='cliente'></b></td>
     </tr>
     <tr>
         <td>CPU: </td>
@@ -118,14 +127,17 @@
     <tr>
         <td>Memória:</td>
         <td><b id='memoria'></b> </td>
+        <td><b id='mem'></b></td>
     </tr>
     <tr>
         <td>HD: </td>
         <td><b id='hd'></b></td>
+        <td><b id='hds'></b></td>
     </tr>
     <tr>
         <td>Sistema Operacional: </td>
         <td><b id='so'></b></td>
+        <td><b id='sis'></b></td>
     </tr>
 </table>
 <h1>Valor Total de sua Compra</h1>
