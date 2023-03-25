@@ -12,45 +12,199 @@
 <body>
     <div id="center">
         <div id="containerTotal"> 
+                
                 <div class="container">
                     <header>
-                    <h1>Monitor</h1>
+                    <h1>CPU</h1>
                     </header>
                     <section>
                         <nav>
-                            <h1>Escolha seu Monitor</h1>
+                            <h1>Escolha sua CPU</h1>
                             <select id="select01">
                                 <option value="0"></option>
-                                <option value="2500">LCD-ASUS ProArt</option>
-                                <option value="1450">OLED</option>
-                                <option value="1350">AOC Hero Full HD</option>
-                                <option value="1300">Twisted Nematic</option>
+                                <option value="500">Core i9</option>
+                                <option value="450">Core i7</option>
+                                <option value="350">Core i5</option>
+                                <option value="300">Core i3</option>
                             </select>
                             <div class="valores">
-                                Valor: <div id="valorMonitor"></div>
+                                Valor: <div id="valorCPU"></div>
                             </div> 
                             <div>
-                                <p id="sumir" class="monitor"></p>
-                                <p id="2500" class="monitor">
-                                    100% sRGB, 100% Rec. 709, Precisão de Cor ΔE < 2, Calman Verificado, USB-C, ProArt Preset, ProArt Palette, Suporte Ergonômico
-                                    <img src="/img/desktop/asus.png" alt="LCD-ASUS ProArt" width="200px" height="150px"/>
+                                <p id="sumir" class="cpu"></p>
+                                <p id="500" class="cpu">
+                                    Esses processadores apresentam uma arquitetura híbrida de desempenho projetada para desempenho inteligente
+                                    <img src="/img/laptop/i9.jpg" alt="Core i9" width="100px" height="100px"/>
                                 </p>
-                                <p id="1450" class="monitor">
-                                    OLED possui milhões de píxeis autoiluminados que podem ser ativados e desativados para alcançar tons pretos perfeitos e um contraste infinito</br>
-                                    <img src="/img/desktop/oled.png" alt="OLED" width="150px" height="120px"/>
+                                <p id="450" class="cpu">
+                                    Entrega alto desempenho para quem precisa de um processador potente para jogos ou trabalho.
+                                    <img src="/img/laptop/i7.png" alt="Core i7" width="100px" height="100px"/>
                                 </p>
-                                <p id="1350" class="monitor">
-                                    Anti-reflexivo, AMD FreeSync Premium,Tamanho 27.0 inches, Tela ou mostrador: LED,Low Blue Light
-                                    <img src="/img/desktop/gamer.png" alt="LED" width="200px" height="150px"/>
+                                <p id="350" class="cpu">
+                                    Apresenta uma frequência de 2.66 GHz, trabalha com 4 núcleos(Quad Core) e um cache L3 de 8 MB.
+                                    <img src="/img/laptop/i5.png" alt="Core i5" width="100px" height="100px"/>
                                 </p>
-                                <p id="1300" class="monitor">
-                                    TN LCD é formado por várias camadas, cristais líquidos, backlight de LED ou lâmpada CCFL, filtro polarizador.
-                                    <img src="/img/desktop/twisted.png" alt="Twisted Nematic" width="200px" height="150px"/>
+                                <p id="300" class="cpu">
+                                    Os processadores Intel Core i3 são os mais básicos da linha.</br>
+                                    <img src="/img/laptop/i3.png" alt="Core i3" width="100px" height="100px"/>
                                 </p>
                             </div>
                         </nav>
                     </section>
                 </div>
+
+                <div class="container">
+                    <header>
+                    <h1>Memória</h1>
+                    </header>
+                    <section>
+                        <nav>
+                        <h1 style="font-size: 1.6em;">Escolha sua Memória</h1>
+                            <select id="select02">
+                                <option value="0"></option>
+                                <option value="200">4GB DDR3</option>
+                                <option value="499">8GB DDR4</option>
+                                <option value="599">16GB DDR4</option>
+                                <option value="699">32GB DDR4</option>
+                            </select>
+                            <div class="valores">
+                                Valor: <div id="valorMemoria"></div>
+                            </div> 
+                            <div>
+                                <p id="sumirMemo" class="memo"></p>
+                                <p id="200" class="memo">
+                                    Ideal para trabalhos com documentos, navegação na web com diversas abas, conteúdos multimídia, entre outros.</br>
+                                    <img src="/img/laptop/memo4gb.png" alt="4GB" width="100px" height="100px"/>
+                                </p>
+                                <p id="499" class="memo">
+                                    Opera com uma frequência de clock de 667 MHz e velocidade real do inversor de 1333 megatransfers por segundo.</br>
+                                    <img src="/img/laptop/memo8gb.png" alt="8GB" width="100px" height="100px"/>
+                                </p>
+                                <p id="599" class="memo">
+                                    Elas operam com o padrão de 2.133 até 4.266 MH, indicando mais velocidade de transferência em um mesmo intervalo de tempo. 
+                                    <img src="/img/laptop/memo16gb.png" alt="16GB" width="150px" height="120px"/>
+                                </p>
+                                <p id="699" class="memo">
+                                    DDR4-2666 CL16 SDRAM (DRAM síncrona) 2Rx8, com base em 16 componentes FBGA de 2G x 8 bits por módulo. </br>
+                                    <img src="/img/laptop/memo32gb.png"alt="32GB" width="150px" height="120px"/>
+                                </p>
+                            </div>
+                        </nav>
+                    </section>
+                </div>  
+
+                <div class="container">
+                    <header>
+                        <h1>HD</h1>
+                    </header>
+                    <section>
+                        <nav>
+                            <h1>Escolha seu HD</h1>
+                            <select id="select03">
+                                <option value="0"></option>
+                                <option value="650">Seagate</option>
+                                <option value="635">SSD ADATA</option>
+                                <option value="630">Western Digital</option>
+                                <option value="510">SSD 500MB</option>
+                            </select>
+                            <div class="valores">
+                                Valor:<div id="valorHD"> </div>
+                            </div>
+                            <div>
+                                <p id="sumirHd" class="hds"></p>
+                                <p id="650" class="hds">
+                                    O Seagate Expansion oferece enorme capacidade e facilidade para armazenar, gerenciar e proteger toda a sua vida digital localmente.
+                                    <img src="/img/laptop/seagate.png" alt="Seagate" width="150px" height="100px"/>
+                                </p>
+                                <p id="635" class="hds">
+                                    Armazenamento em cache SLC dinâmico, a memória Flash NAND opera no modo de célula de nível único e aumenta o desempenho.
+                                    <img src="/img/laptop/adata.png" alt="SSD ADATA" width="200px" height="150px"/>
+                                </p>
+                                <p id="630" class="hds">
+                                    São construídos para serem resistentes a choques para ajudar a proteger contra perda de dados no caso unidade sofra pancadas ou quedas.
+                                    <img src="/img/laptop/wd.png" alt="Western Digital" width="100px" height="100px"/>
+                                </p>
+                                <p id="510" class="hds">
+                                    É 10x mais rápido do que um disco rígido tradicional, resposta ultrarrápida em multitarefas e um computador mais rápido</br> 
+                                    <img src="/img/laptop/ssd.jpg" alt="SSD 500MB" width="100px" height="100px"/>
+                                </p>
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+        </div>
+        <div id="containerTotal"> 
+            
+            <div class="container">
+                <header>
+                    <h1 style="font-size: 1.3em; padding: 25px;">Sistema Operacional</h1>
+                </header>
+                <section>
+                    <nav>
+                        <h1>Escolha seu S.O</h1>
+                        <select id="select04">
+                            <option value="0"></option>
+                            <option value="810">Mac IOS</option>
+                            <option value="750">LINUX</option>
+                        </select>
+                        <div class="valores">
+                            Valor: <div id="valorSO"></div>
+                        </div>
+                        <div>
+                            <p id="sumirSo" class="so"></p>
+                            <p id="810" class="so">
+                                O Mac OS é o sistema operacional dos computadores da linha Macintosh, da Apple
+                                <img src="/img/laptop/apple.png" alt="Core i9" width="200px" height="150px"/>
+                            </p>
+                            <p id="750" class="so">
+                                O Linux é um sistema operacional open source e gratuito, disponibilizado sob a Licença Pública Geral (GPL)
+                                <img src="/img/laptop/linux.png" alt="Core i7" width="180px" height="100px"/>
+                            </p>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+
+            <div class="container">
+                <header>
+                <h1>Monitor</h1>
+                </header>
+                <section>
+                    <nav>
+                        <h1>Escolha seu Monitor</h1>
+                        <select id="select05">
+                            <option value="0"></option>
+                            <option value="2500">LCD-ASUS ProArt</option>
+                            <option value="1450">OLED</option>
+                            <option value="1350">AOC Hero Full HD</option>
+                            <option value="1300">Twisted Nematic</option>
+                        </select>
+                        <div class="valores">
+                            Valor: <div id="valorMonitor"></div>
+                        </div> 
+                        <div>
+                            <p id="sumirMonitor" class="monitor"></p>
+                            <p id="2500" class="monitor">
+                                100% sRGB, 100% Rec. 709, Precisão de Cor ΔE < 2, Calman Verificado, USB-C, ProArt Preset, ProArt Palette, Suporte Ergonômico
+                                <img src="/img/desktop/asus.png" alt="LCD-ASUS ProArt" width="200px" height="150px"/>
+                            </p>
+                            <p id="1450" class="monitor">
+                                OLED possui milhões de píxeis autoiluminados que podem ser ativados e desativados para alcançar tons pretos perfeitos e um contraste infinito</br>
+                                <img src="/img/desktop/oled.png" alt="OLED" width="150px" height="120px"/>
+                            </p>
+                            <p id="1350" class="monitor">
+                                Anti-reflexivo, AMD FreeSync Premium,Tamanho 27.0 inches, Tela ou mostrador: LED,Low Blue Light
+                                <img src="/img/desktop/gamer.png" alt="LED" width="200px" height="150px"/>
+                            </p>
+                            <p id="1300" class="monitor">
+                                TN LCD é formado por várias camadas, cristais líquidos, backlight de LED ou lâmpada CCFL, filtro polarizador.
+                                <img src="/img/desktop/twisted.png" alt="Twisted Nematic" width="200px" height="150px"/>
+                            </p>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+            
         </div>
         <div>
 
@@ -67,9 +221,29 @@
                 <th>Valores</th>
             </tr>
             <tr>
+                <td>CPU: </td>
+                <td><b id='cpu'></b> </td>
+                <td><b id='SOS'></b></td>
+            </tr>
+            <tr>
+                <td>Memória:</td>
+                <td><b id='memoria'></b> </td>
+                <td><b id='mem'></b></td>
+            </tr>
+            <tr>
+                <td>HD: </td>
+                <td><b id='hd'></b></td>
+                <td><b id='hds'></b></td>
+            </tr>
+            <tr>
+                <td>Sistema Operacional: </td>
+                <td><b id='so'></b></td>
+                <td><b id='sis'></b></td>
+            </tr>
+            <tr>
                 <td>Monitor: </td>
                 <td><b id='precoMonitor'></b> </td>
-                <td><b id='SOS'></b></td>
+                <td><b id='mon'></b></td>
             </tr>
         </table>
          <h1>Valor Total de sua Compra</h1>
