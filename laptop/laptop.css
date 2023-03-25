@@ -71,18 +71,25 @@ article {
     box-shadow: 1px 1px 1px 1px #e3e3e3; 
     width: 450px;
 }
-#comprar{
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    margin-left: 40%;
+.btn, #comprar{
+    border-radius: 8px;
+    margin-left: 2%;
     color: #009b89;
     font-weight: bold;
     font-family: inherit;
-    padding: 20px;
-    font-size: 25px;
-    font-family:'open_sansregular';
+    font-size: 20px;
+    font-family:Verdana;
     cursor: pointer;
+    font-weight:bold;
+    padding:20px 40px;
+}
+#comprar:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* tabela para mostrar valores */

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script defer src="laptop.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="laptop.css" media="screen" />
+</head>
+<body>
+    <div id="center">
+        <div id="containerTotal"> 
+                <div class="container">
+                    <header>
+                    <h1>CPU</h1>
+                    </header>
+                    <section>
+                        <nav>
+                            <h1>Escolha sua CPU</h1>
+                            <select id="select01">
+                                <option value="0"></option>
+                                <option value="500">Core i9</option>
+                                <option value="450">Core i7</option>
+                                <option value="350">Core i5</option>
+                                <option value="300">Core i3</option>
+                            </select>
+                            <div class="valores">
+                                Valor: <div id="valorCPU"></div>
+                            </div> 
+                            <div>
+                                <p id="sumir" class="cpu"></p>
+                                <p id="500" class="cpu"><img src="/img/laptop/i9.jpg" alt="Core i9" width="200px" height="150px"/></p>
+                                <p id="450" class="cpu"><img src="/img/laptop/i7.png" alt="Core i7" width="200px" height="150px"/></p>
+                                <p id="350" class="cpu"><img src="/img/laptop/i5.png" alt="Core i5" width="200px" height="150px"/></p>
+                                <p id="300" class="cpu"><img src="/img/laptop/i3.png" alt="Core i3" width="200px" height="150px"/></p>
+                                <img src="img/team/1.png" alt="">
+                            </div>
+                        </nav>
+                    </section>
+                </div>
+
+                <div class="container">
+                    <header>
+                    <h1>Memória</h1>
+                    </header>
+                    <section>
+                        <nav>
+                        <h1 style="font-size: 1.6em;">Escolha sua Memória</h1>
+                            <select id="select02">
+                                <option value="0"></option>
+                                <option value="200">4GB DDR3</option>
+                                <option value="499">8GB DDR4</option>
+                                <option value="599">16GB DDR4</option>
+                                <option value="699">32GB DDR4</option>
+                            </select>
+                            <div class="valores">
+                                Valor: <div id="valorMemoria"></div>
+                            </div> 
+                            <div>
+                                <p id="sumirMemo" class="memo"></p>
+                                <p id="200" class="memo"><img src="/img/laptop/memo4gb.png" alt="4GB" width="200px" height="150px"/></p>
+                                <p id="499" class="memo"><img src="/img/laptop/memo8gb.png" alt="8GB" width="200px" height="150px"/></p>
+                                <p id="599" class="memo"><img src="/img/laptop/memo16gb.png" alt="16GB" width="200px" height="150px"/></p>
+                                <p id="699" class="memo"><img src="/img/laptop/memo32gb.png"alt="32GB" width="200px" height="150px"/></p>
+                                <img src="img/team/1.png" alt="">
+                            </div>
+                        </nav>
+                    </section>
+                </div>  
+        </div>
+
+        <div id="containerTotal"> 
+            <div class="container">
+                <header>
+                    <h1>HD</h1>
+                </header>
+                <section>
+                    <nav>
+                        <h1>Escolha seu HD</h1>
+                        <select id="select03">
+                            <option value="0"></option>
+                            <option value="650">Seagate</option>
+                            <option value="635">SSD ADATA</option>
+                            <option value="630">Western Digital</option>
+                            <option value="510">SSD 500MB</option>
+                        </select>
+                        <div class="valores">
+                            Valor: <div id="valorHD"></div>
+                        </div>
+                        <div>
+                            <p id="sumirHd" class="hds"></p>
+                            <p id="650" class="hds"><img src="/img/laptop/seagate.png" alt="Core i9" width="150px" height="130px"/></p>
+                            <p id="635" class="hds"><img src="/img/laptop/adata.png" alt="Core i7" width="200px" height="150px"/></p>
+                            <p id="630" class="hds"><img src="/img/laptop/wd.png" alt="Core i5" width="200px" height="150px"/></p>
+                            <p id="510" class="hds"><img src="/img/laptop/ssd.jpg" alt="Core i3" width="200px" height="150px"/></p>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+            <div class="container">
+                <header>
+                    <h1 style="font-size: 1.3em; padding: 25px;">Sistema Operacional</h1>
+                </header>
+                <section>
+                    <nav>
+                        <h1>Escolha seu S.O</h1>
+                        <select id="select04">
+                            <option value="0"></option>
+                            <option value="810">Mac IOS</option>
+                            <option value="750">LINUX</option>
+                        </select>
+                        <div class="valores">
+                            Valor: <div id="valorSO"></div>
+                        </div>
+                        <div>
+                            <p id="sumirSo" class="so"></p>
+                            <p id="810" class="so"><img src="/img/laptop/apple.png" alt="Core i9" width="200px" height="150px"/></p>
+                            <p id="750" class="so"><img src="/img/laptop/linux.png" alt="Core i7" width="200px" height="150px"/></p>
+                        </div>
+                    </nav>
+                </section>
+            </div>
+            
+        </div>
+        <div>
+
+            <button type="submit" class="btn" onclick="history.go(-1);">Voltar</button>
+            <button type="submit" id="comprar" onclick="comprar()">Comprar</button></br>
+        </div>
+    </div>
+<div id="tabela" style="display: none;">
+    <h2> Cliente <b id='cliente' style="color: #009b89;"></b> Comprou: </h2>
+<table id="customers" >
+    <tr>
+        <th>Detalhes</th>
+        <th>Itens</th>
+        <th>Valores</th>
+    </tr>
+    <tr>
+        <td>CPU: </td>
+        <td><b id='cpu'></b> </td>
+        <td><b id='SOS'></b></td>
+    </tr>
+    <tr>
+        <td>Memória:</td>
+        <td><b id='memoria'></b> </td>
+        <td><b id='mem'></b></td>
+    </tr>
+    <tr>
+        <td>HD: </td>
+        <td><b id='hd'></b></td>
+        <td><b id='hds'></b></td>
+    </tr>
+    <tr>
+        <td>Sistema Operacional: </td>
+        <td><b id='so'></b></td>
+        <td><b id='sis'></b></td>
+    </tr>
+</table>
+<h1>Valor Total de sua Compra</h1>
+<input type="text" id="Resultado" readonly>
+<div style="display: flex; justify-content: center;">
+    <button type="submit" class="btn" onclick="history.go(0);">Voltar</button>
+    <button type="submit" class="btn" onclick="history.go(-1);">Escolher</button>
+    <button type="submit" class="btn" onclick="history.go(-2);">Inicio</button>
+</div>
+</div>
+
+
+</body>
+</html>
