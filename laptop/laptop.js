@@ -55,25 +55,25 @@ $("#comprar").click(function(e){
 $('#select01').change(function(){
 	var valor = $('#select01').val();
   $('#valorCPU').css('display','block')
-	$('#valorCPU').html(valor);
+	$('#valorCPU').html(valor  + '$');
 });
 
 $('#select02').change(function(){
 	var valor = $('#select02').val();
   $('#valorMemoria').css('display','block')
-	$('#valorMemoria').html(valor);
+	$('#valorMemoria').html(valor  + '$');
 });
 
 $('#select03').change(function(){
 	var valor = $('#select03').val();
   $('#valorHD').css('display','block')
-	$('#valorHD').html(valor);
+	$('#valorHD').html(valor + '$');
 });
 
 $('#select04').change(function(){
 	var valor = $('#select04').val();
   $('#valorSO').css('display','block')
-	$('#valorSO').html(valor);
+	$('#valorSO').html(valor + '$');
 });
 
 // função para alterar imagem de acordo com o que é pedido

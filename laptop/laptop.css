@@ -57,6 +57,8 @@ section {
 .valores{
     font-weight: bold;
     margin-top: 8px;
+    justify-content: flex-start;
+    display: flex;
 }
 
 nav {
